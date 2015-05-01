@@ -1,0 +1,21 @@
+﻿<Ribbon x:Class="npeimanovic_wpf.RibbonControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             >
+    <Ribbon.ApplicationMenu>
+        <RibbonApplicationMenu Visibility="Collapsed"></RibbonApplicationMenu>
+    </Ribbon.ApplicationMenu>
+    <RibbonTab  Header="Users" >
+        <RibbonGroup>
+            <RibbonButton LargeImageSource="Images\add.ico" Click="add_clicked" Label="add"/>
+            <RibbonButton LargeImageSource="Images\edit.ico" Label="Edit" />
+            <RibbonButton LargeImageSource="Images\remove.ico" Label="Remove"/>
+        </RibbonGroup>
+        
+    </RibbonTab>
+    <RibbonTab  Header="Email Setup" >
+    </RibbonTab>
+</Ribbon>

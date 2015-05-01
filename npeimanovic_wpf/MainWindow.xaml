@@ -1,0 +1,33 @@
+﻿<RibbonWindow x:Class="npeimanovic_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:AppControls="clr-namespace:npeimanovic_wpf"
+        Title="MainWindow"
+        WindowState="Maximized">
+
+    <!---->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="142"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+        <AppControls:RibbonControl></AppControls:RibbonControl>
+       </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        	<Grid>
+                <AppControls:CurrentUser />
+                
+            </Grid>  
+            <Grid Grid.Column="2">
+                <AppControls:UserProfile >
+                    
+                </AppControls:UserProfile>
+            </Grid>  
+        </Grid>        
+    </Grid>
+</RibbonWindow>

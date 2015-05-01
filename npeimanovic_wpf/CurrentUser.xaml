@@ -1,0 +1,120 @@
+﻿<UserControl x:Class="npeimanovic_wpf.CurrentUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <!--Set the Application ResourceDictionary-->
+    <UserControl.Resources>
+        <ResourceDictionary Source="ApplicationDictionary.xaml" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid  Grid.Row="0" VerticalAlignment="Top" Width="auto" Height="36" Background ="{StaticResource ResourceKey=StandardSolidColorBrush}">
+       
+        <Label Content="Current User" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="{StaticResource ResourceKey=TextHeaderColor}"/>
+       </Grid>
+        <Grid Grid.Row="1" >
+            <FlowDocumentReader>
+                <FlowDocument>
+                    <Table CellSpacing="20">
+                        <TableRowGroup>
+                            <!-- Title row for the table. -->
+                            <TableRow Background= "{StaticResource ResourceKey=TableHeaderColor}" Foreground="{StaticResource ResourceKey=TextHeaderColor}">
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt" FontWeight="Bold">User Name</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                                <TableCell TextAlignment="Left">
+                                    <Paragraph FontSize="18pt"></Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            
+                            
+                        </TableRowGroup>
+                    </Table>
+                </FlowDocument>
+            </FlowDocumentReader>
+        </Grid>
+    </Grid>
+</UserControl>

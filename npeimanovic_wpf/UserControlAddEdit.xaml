@@ -1,0 +1,90 @@
+﻿<Window x:Class="npeimanovic_wpf.UserControlAddEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UserControlAddEdit" Height="350" Width="755"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <ResourceDictionary Source="ApplicationDictionary.xaml" />
+    </Window.Resources>
+    <Grid>      
+       
+        <Grid Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition />                
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="1*"/>
+               
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1">
+                <Grid  Grid.Row="0" VerticalAlignment="Top" Width="auto" Height="36" Background ="{StaticResource ResourceKey=StandardSolidColorBrush}">
+
+                    <Label Content="Add New User" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="{StaticResource ResourceKey=TextHeaderColor}"/>
+                </Grid>
+            </StackPanel>    
+            <StackPanel Orientation="Horizontal" >
+                <Button  Margin="20" Background="White" >
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+                        <Image Source="Images\save.ico" />
+                        <TextBlock Grid.Row="1" TextAlignment="Center">Save</TextBlock>
+                    </Grid>
+                </Button>
+                <Button Margin="620,20,20,20" Background="White" >
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+                        <Image Source="Images\close.ico" />
+                        <TextBlock Grid.Row="1" TextAlignment="Center">close</TextBlock>
+                    </Grid>
+                </Button>
+
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+
+                <Border   Style="{StaticResource ResourceKey=BorderStyle2}">
+                    <TextBox TextWrapping="Wrap" Text="First Name" Style="{StaticResource TextBoxStyle1}" Width="160"/>
+                </Border>
+                <Border  Style="{StaticResource ResourceKey=BorderStyle2}">
+                    <TextBox TextWrapping="Wrap" Text="Last Name" Style="{StaticResource TextBoxStyle1}" Width="160" />
+                </Border>
+            </StackPanel >
+            <StackPanel  Grid.Row="3" Orientation="Horizontal" >
+                <Border  Style="{StaticResource ResourceKey=BorderStyle2}">
+                    <TextBox TextWrapping="Wrap" Text="Job Title" Style="{StaticResource TextBoxStyle1}" Width="345" />
+                </Border>
+                <Border  Style="{StaticResource ResourceKey=BorderStyle2}">
+                    <TextBox TextWrapping="Wrap" Text="Phone Number" Style="{StaticResource TextBoxStyle1}" Width="150" />
+                </Border>
+                <Border  Style="{StaticResource ResourceKey=BorderStyle2}">
+                    <TextBox TextWrapping="Wrap" Text="Extension" Style="{StaticResource TextBoxStyle1}" Width="150" />
+                </Border>
+            </StackPanel>
+           
+            <StackPanel  Grid.Row="4" Orientation="Horizontal">
+                <Border  Style="{StaticResource ResourceKey=BorderStyle2}">
+                    <TextBox TextWrapping="Wrap" Text="Fax Number" Style="{StaticResource TextBoxStyle1}" Width="195" />
+                </Border>
+                <Border  Style="{StaticResource ResourceKey=BorderStyle2}">
+                    <TextBox TextWrapping="Wrap" Text="Cell Phone" Style="{StaticResource TextBoxStyle1}" Width="200" />
+                </Border>
+                <Border  Style="{StaticResource ResourceKey=BorderStyle2}">
+                    <TextBox TextWrapping="Wrap" Text="E-mail" Style="{StaticResource TextBoxStyle1}" Width="250" />
+                </Border>
+            </StackPanel>
+            <StackPanel  Grid.Row="5"  Orientation="Horizontal">
+               
+            </StackPanel>           
+            
+        </Grid>
+    </Grid>
+ 
+
+</Window>
