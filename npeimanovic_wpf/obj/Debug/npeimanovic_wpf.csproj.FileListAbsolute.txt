@@ -24,3 +24,5 @@ C:\Users\Manish\Desktop\Workspace\wpf_projects\npeimanovic_wpf\npeimanovic_wpf\o
 C:\Users\Manish\Desktop\Workspace\wpf_projects\npeimanovic_wpf\npeimanovic_wpf\obj\Debug\UserProfile.g.cs
 C:\Users\Manish\Desktop\Workspace\wpf_projects\npeimanovic_wpf\npeimanovic_wpf\obj\Debug\UserControlAddEdit.baml
 C:\Users\Manish\Desktop\Workspace\wpf_projects\npeimanovic_wpf\npeimanovic_wpf\obj\Debug\UserControlAddEdit.g.cs
+C:\Users\Manish\Desktop\Workspace\wpf_projects\npeimanovic_wpf\npeimanovic_wpf\obj\Debug\EmailSetup.baml
+C:\Users\Manish\Desktop\Workspace\wpf_projects\npeimanovic_wpf\npeimanovic_wpf\obj\Debug\EmailSetup.g.cs

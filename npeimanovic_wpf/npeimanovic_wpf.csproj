@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EmailSetup.xaml.cs">
+      <DependentUpon>EmailSetup.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RibbonControl.xaml.cs">
       <DependentUpon>RibbonControl.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
       <DependentUpon>UserProfile.xaml</DependentUpon>
     </Compile>
     <Page Include="ApplicationDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmailSetup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
