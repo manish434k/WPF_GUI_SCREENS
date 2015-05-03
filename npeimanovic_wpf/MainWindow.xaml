@@ -12,18 +12,18 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-        <AppControls:RibbonControl></AppControls:RibbonControl>
+        <AppControls:RibbonControl  ></AppControls:RibbonControl>
        </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-        	<Grid>
-                <AppControls:CurrentUser />
+        	<Grid Name="mainLeft">
+                <AppControls:CurrentUser />              
                 
             </Grid>  
-            <Grid Grid.Column="2">
+            <Grid Grid.Column="1" Name="mainright">
                 <AppControls:UserProfile >
                     
                 </AppControls:UserProfile>

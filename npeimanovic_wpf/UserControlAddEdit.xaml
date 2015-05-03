@@ -21,7 +21,7 @@
             <StackPanel Grid.Row="1">
                 <Grid  Grid.Row="0" VerticalAlignment="Top" Width="auto" Height="36" Background ="{StaticResource ResourceKey=StandardSolidColorBrush}">
 
-                    <Label Content="Add New User" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="{StaticResource ResourceKey=TextHeaderColor}"/>
+                    <Label Name="title" Content="Add New User" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="{StaticResource ResourceKey=TextHeaderColor}"/>
                 </Grid>
             </StackPanel>    
             <StackPanel Orientation="Horizontal" >

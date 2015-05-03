@@ -4,18 +4,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
+             Name="ribcontrol"
+            SelectionChanged="selchanged"
              >
     <Ribbon.ApplicationMenu>
         <RibbonApplicationMenu Visibility="Collapsed"></RibbonApplicationMenu>
     </Ribbon.ApplicationMenu>
-    <RibbonTab  Header="Users" >
+    <RibbonTab  Header="Users" Name="User">
         <RibbonGroup>
             <RibbonButton LargeImageSource="Images\add.ico" Click="add_clicked" Label="add"/>
-            <RibbonButton LargeImageSource="Images\edit.ico" Label="Edit" />
+            <RibbonButton LargeImageSource="Images\edit.ico" Click="edit_clicked" Label="Edit" />
             <RibbonButton LargeImageSource="Images\remove.ico" Label="Remove"/>
         </RibbonGroup>
         
     </RibbonTab>
-    <RibbonTab  Header="Email Setup" >
+    <RibbonTab  Header="Email Setup" Name="Email_Setup"   >
     </RibbonTab>
 </Ribbon>

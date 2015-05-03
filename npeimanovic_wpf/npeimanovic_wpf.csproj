@@ -57,6 +57,7 @@
     <Compile Include="EmailSetup.xaml.cs">
       <DependentUpon>EmailSetup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GalleryItem.cs" />
     <Compile Include="RibbonControl.xaml.cs">
       <DependentUpon>RibbonControl.xaml</DependentUpon>
     </Compile>
