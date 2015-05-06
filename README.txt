@@ -5,3 +5,8 @@ Steps to create ribbon in WPF
 
 >>Create Ribbon tipe user control and include in main window.
 
+
+
+
+>> Pending task
+1) Edit textblock to remove text when clicked

@@ -21,7 +21,6 @@ namespace npeimanovic_wpf
     /// </summary>
     public partial class RibbonControl : Ribbon
     {
-       
 
         public RibbonControl()
         {

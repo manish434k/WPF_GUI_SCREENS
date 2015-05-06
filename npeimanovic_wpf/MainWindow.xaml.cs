@@ -23,7 +23,7 @@ namespace npeimanovic_wpf
     
     public partial class MainWindow : RibbonWindow
     {
-        static bool flag =false;
+        
         CurrentUser curruser= new CurrentUser();
         EmailSetup emailSetup = new EmailSetup();
         UserProfile usrProf = new UserProfile();
