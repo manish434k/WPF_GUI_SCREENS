@@ -1,0 +1,52 @@
+﻿<RibbonWindow x:Class="npeimanovic_Client.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:npeimanovic_Client"
+        Title="Settings Window" 
+        WindowState="Maximized"
+              MinHeight="400"
+              MinWidth="500">
+    
+    <Grid>      
+           
+            <Ribbon>
+                <Ribbon.ApplicationMenu>
+                    <RibbonApplicationMenu Visibility="Collapsed"></RibbonApplicationMenu>
+                </Ribbon.ApplicationMenu>
+                <RibbonTab  Header="Database Setup" Name="Settings_database_Setup"   >
+                    <RibbonGroup>
+                        <Grid Height="88" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+
+                            <CheckBox Content="Local Network" Margin="8"  />
+                            <CheckBox Grid.Row="1" Content="AWS Database" Margin="8"  />
+                        </Grid>
+
+                    </RibbonGroup>
+                </RibbonTab>
+                <RibbonTab  Header="Accounting Setup" Name="Settings_Accounting_Setup" >
+                    <RibbonGroup>
+                    <RibbonButton LargeImageSource="Images\import_customer.png"  Label="Setup Custom Fields"/>
+                    <RibbonButton LargeImageSource="Images\setup.png"  Label="Setup Payroll" />
+                    <RibbonButton LargeImageSource="Images\setup.png"  Label="Setup Classes" />
+                    </RibbonGroup>
+                </RibbonTab>
+            <RibbonTab  Header="Fuel Setup" x:Name="Settings_Fuel_Setup" >
+                <RibbonGroup>
+                <ComboBox  VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" Width="350" Margin="50,20">
+                        
+                    </ComboBox>
+
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+        <Grid Name="settingWindow">
+            <!--<controls:DataBaseSetUp></controls:DataBaseSetUp>-->
+            <!--<controls:AccountingSetup></controls:AccountingSetup>-->
+            <controls:FuelSetup></controls:FuelSetup>
+        </Grid>
+        </Grid>
+</RibbonWindow>

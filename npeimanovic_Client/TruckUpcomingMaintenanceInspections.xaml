@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="npeimanovic_Client.TruckUpcomingMaintenanceInspections"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"
+             Width="600">
+    <UserControl.Resources>
+        <ResourceDictionary Source="ApplicationDictionary.xaml" />
+    </UserControl.Resources>
+    <Grid>
+        <FlowDocumentReader >
+            <FlowDocument>
+                <Table CellSpacing="20">
+                    <TableRowGroup>
+                        <!-- Title row for the table. -->
+                        <TableRow Background= "{StaticResource ResourceKey=TableHeaderColor}" Foreground="{StaticResource ResourceKey=TextHeaderColor}">
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt" FontWeight="Bold">Truck Upcoming Maintenance Inspections
+
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    <TableRowGroup>
+                        <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt">Truck Number
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt">Inspection Due Date
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt">Inspection Description
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt">
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background= "{StaticResource ResourceKey=TableRowColor1}" >
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                            <TableCell TextAlignment="Left">
+                                <Paragraph FontSize="10pt"></Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+</UserControl>

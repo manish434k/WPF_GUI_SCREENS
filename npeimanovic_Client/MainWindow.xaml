@@ -1,0 +1,50 @@
+﻿<RibbonWindow x:Class="npeimanovic_Client.ClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:tables="clr-namespace:npeimanovic_Client"
+        Title="Client Window" 
+        WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="142"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Ribbon Grid.RowSpan="3" Grid.ColumnSpan="2" SelectionChanged="Ribbon_SelectionChanged">
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu Visibility="Collapsed"></RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+            <RibbonTab  Header="HOME" Name="Client_Home"   >
+                <RibbonGroup>
+                    <RibbonButton LargeImageSource="Images\settings.png"  Label="Settings" Click="openSettingsWindow"/>
+                    <RibbonButton LargeImageSource="Images\company.png"  Label="Company" />
+                    
+                </RibbonGroup>
+            </RibbonTab>
+            <RibbonTab  Header="Accounting" Name="Client_Accounting"   />
+            <RibbonTab  Header="Accident Register" Name="Client_AccidentRegister"   />
+            <RibbonTab  Header="Contacts" Name="Client_Contacts"   />
+            <RibbonTab  Header="Dispatch" Name="Client_Dispatch"   />
+            <RibbonTab  Header="Drivers" Name="Client_Drivers"   />
+            <RibbonTab  Header="IFTA/Fuel" Name="Client_IFTA_Fuel"   />
+            <RibbonTab  Header="Maintenance" Name="Client_Maintenance"   />
+            <RibbonTab  Header="Reports" Name="Client_Reports"   />
+        </Ribbon>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <tables:DriverCDLExpirations></tables:DriverCDLExpirations>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="0">
+            <tables:DriverMedicalCertificateExpirations></tables:DriverMedicalCertificateExpirations>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <tables:TruckInspection></tables:TruckInspection>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <tables:TruckUpcomingMaintenanceInspections ></tables:TruckUpcomingMaintenanceInspections>
+        </Grid>
+    </Grid>
+</RibbonWindow>
