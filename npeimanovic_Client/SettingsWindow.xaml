@@ -4,12 +4,13 @@
         xmlns:controls="clr-namespace:npeimanovic_Client"
         Title="Settings Window" 
         WindowState="Maximized"
-              MinHeight="400"
-              MinWidth="500">
+              MinHeight="500"
+              MinWidth="800"
+              >
     
-    <Grid>      
-           
-            <Ribbon>
+    <Grid>
+
+        <Ribbon SelectionChanged="menuSelchanged">
                 <Ribbon.ApplicationMenu>
                     <RibbonApplicationMenu Visibility="Collapsed"></RibbonApplicationMenu>
                 </Ribbon.ApplicationMenu>
@@ -37,7 +38,11 @@
             <RibbonTab  Header="Fuel Setup" x:Name="Settings_Fuel_Setup" >
                 <RibbonGroup>
                 <ComboBox  VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Height="34" Width="350" Margin="50,20">
-                        
+                        <ComboBoxItem Content="Select Fuel Provider" Selector.IsSelected="True"/>
+                        <ComboBoxItem Content="FleetOne"/>
+                        <ComboBoxItem Content="CommDate"/>
+                        <ComboBoxItem Content="TCH"/>
+                        <ComboBoxItem Content="Pilot"/>
                     </ComboBox>
 
                 </RibbonGroup>

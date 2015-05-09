@@ -45,6 +45,7 @@
         <Setter Property="Foreground" Value="{StaticResource TextHintColor}"/>
         <Setter Property="FontFamily" Value="Trebuchet MS"/>
         <Setter Property="TextAlignment" Value="Center"/>
+        
 
     </Style>
 

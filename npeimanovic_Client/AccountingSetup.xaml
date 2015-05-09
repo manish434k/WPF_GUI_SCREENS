@@ -26,7 +26,7 @@
             </Grid>
             <StackPanel  Grid.Row="1" Margin="20" Orientation="Horizontal" Height="36">
                 <Grid>
-                    <TextBox Width="500" Text="Select Database Network Location " Style="{StaticResource TextBoxStyle1}"/>
+                    <TextBox GotFocus="TextBox_GotFocus" Width="500" Text="Select Database Network Location " Style="{StaticResource TextBoxStyle1}"/>
                     <Image Source="Images\open.png"  HorizontalAlignment="Right" Margin="2"/>
                 </Grid>
                 <Grid Margin="20,0">

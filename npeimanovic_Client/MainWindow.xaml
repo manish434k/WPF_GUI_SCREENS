@@ -3,7 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:tables="clr-namespace:npeimanovic_Client"
         Title="Client Window" 
-        WindowState="Maximized">
+        WindowState="Maximized"
+              MinHeight="500"
+              MinWidth="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>

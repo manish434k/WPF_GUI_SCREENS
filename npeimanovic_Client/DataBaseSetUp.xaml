@@ -25,7 +25,7 @@
             </Grid>
             <StackPanel  Grid.Row="1" Margin="20" Orientation="Horizontal" Height="36">
                 <Grid>
-                    <TextBox Width="500" Text="Select Database Network Location " Style="{StaticResource TextBoxStyle1}"/>
+                    <TextBox GotFocus="TextBox_GotFocus" Width="400" Text="Select Database Network Location " Style="{StaticResource TextBoxStyle1}"/>
                     <Image Source="Images\open.png"  HorizontalAlignment="Right" Margin="2"/>
                 </Grid>
                 <Grid Margin="20,0">
@@ -53,7 +53,7 @@
             </Grid>
             <StackPanel  Grid.Row="1" Margin="20,20,0,0" Orientation="Horizontal" Height="36" VerticalAlignment="Top">
                 <Grid>
-                    <TextBox  Text=" Host Name" Width="500" Style="{StaticResource TextBoxStyle1}"/>
+                    <TextBox  GotFocus="TextBox_GotFocus" Text=" Host Name" Width="400" Style="{StaticResource TextBoxStyle1}"/>
 
                 </Grid>
                 <Grid Margin="20,0">
@@ -68,7 +68,7 @@
                 </Grid>
             </StackPanel>
             <Grid Grid.Row="2" Width="200" Height="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0 ">
-                <TextBox  Text=" Port Number" Width="200" Style="{StaticResource TextBoxStyle1}"/>
+                <TextBox  GotFocus="TextBox_GotFocus" Text=" Port Number" Width="200" Style="{StaticResource TextBoxStyle1}"/>
 
             </Grid>
         </Grid>

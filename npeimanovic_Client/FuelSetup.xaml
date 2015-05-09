@@ -31,18 +31,18 @@
         <Grid  Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="36"/>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="50"/>
                
                 
             </Grid.RowDefinitions>
             <Grid VerticalAlignment="Top" Width="auto" Height="36" Background ="{StaticResource ResourceKey=StandardSolidColorBrush}">
                 <Label Content="Select Fuel Report and Press Import Button  
-" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="{StaticResource ResourceKey=TextHeaderColor}" Margin="127,0" Grid.RowSpan="2"/>
+" HorizontalAlignment="Left" FontSize="14" FontWeight="Bold" Foreground="{StaticResource ResourceKey=TextHeaderColor}" Margin="12,0" Grid.RowSpan="2"/>
             </Grid>
-            <StackPanel  Grid.Row="1" Margin="30" Orientation="Horizontal" Height="36" >
+            <StackPanel  Grid.Row="1" Margin="30,0,0,0" Orientation="Horizontal" Height="25" >
                 
                 <Grid>
-                    <TextBox Width="auto" Text="Select Database Network Location            " Style="{StaticResource TextBoxStyle1}"/>
+                    <TextBox GotFocus="TextBox_GotFocus" Width="250" Height="25" Text="Select Database Network Location" Style="{StaticResource TextBoxStyle1}" FontSize="12" />
                     <Image Source="Images\open.png"  HorizontalAlignment="Right" Margin="2"/>
                 </Grid>
                 <Grid Margin="20,0">
@@ -51,7 +51,7 @@
                     <Button Template="{StaticResource ButtonTemplate1}" >
                         <StackPanel Orientation="Horizontal" >
                             <Image Source="Images\import_customer.png"  HorizontalAlignment="Left"/>
-                            <TextBlock Text="Import" Margin="10"></TextBlock>
+                            <TextBlock Text="Import" Margin="1"></TextBlock>
                         </StackPanel>
                     </Button>
 

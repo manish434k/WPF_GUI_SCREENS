@@ -22,9 +22,40 @@ namespace npeimanovic_Client
 
     public partial class SettingsWindow : RibbonWindow
     {
+        DataBaseSetUp dbsetup = new DataBaseSetUp();
+        AccountingSetup accSetup = new AccountingSetup();
+        FuelSetup fuelSetUp = new FuelSetup();
+
         public SettingsWindow()
         {
             InitializeComponent();
         }
+
+        private void menuSelchanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(Settings_database_Setup.IsSelected)
+            {
+                settingWindow.Children.Clear();
+                settingWindow.Children.Add(dbsetup);
+
+            }else if(Settings_Accounting_Setup.IsSelected)
+            {
+                settingWindow.Children.Clear();
+                settingWindow.Children.Add(accSetup);
+            }
+            else if (Settings_Fuel_Setup.IsSelected)
+            {
+                settingWindow.Children.Clear();
+                settingWindow.Children.Add(fuelSetUp);
+            }
+
+        }
+
+        private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
+
+   
 }
